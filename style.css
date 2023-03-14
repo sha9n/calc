@@ -1,0 +1,61 @@
+/*
+color
+back  #16444A
+purple #6F1BB1
+pink #931BB1
+*/
+    
+    .cal{
+            margin: 50px auto;
+            width: 390px;
+            height: 844px;
+            border-radius: 20px;
+            background: #16444A;
+            color: #fff;
+            font-family: Arial;
+            padding: 20px;
+            
+    }          
+    
+    .screen{
+        height: 326px;
+        padding: 10px;
+        font-size: 6em;
+        position: relative;
+        top: 120px; left: 300px;
+    }
+    
+    .knop{
+        width: 84px;   
+        height: 84px;
+        background-color: #6F1BB1;
+        border-radius: 60%;
+        text-align: center;
+        line-height: 84px;
+        font-size: 3em;
+        cursor: pointer;
+        user-select: none;
+        float: left;
+        position: relative;
+        top: 0;
+        margin: 0 12px 17px 0;
+    }
+
+    .knop:hover{
+        filter: brightness(140%);
+    }
+
+    .knop:active{
+        filter: brightness(90%);
+    }
+
+    .zero{
+        width: 180px;
+        height: 84px;
+        border-radius: 60px;
+
+    }
+
+    .pink{
+        background-color:#931BB1 ;
+    }
