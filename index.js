@@ -16,3 +16,17 @@ function clearAll () {
 }
 
 document.querySelector('.ac').onclick = clearAll;
+
+document.querySelector('.buttons').onclick = (event) => {
+    if(event.target.classList.constains('knop')) return;
+    if(event.target.classList.constains('ac')) return;
+
+    out.textContent = '';
+    const key = event.target.textContent; 
+
+    if (digit.includes(key)) {
+        a += key;
+        console.log(a , b, sign)
+        out.textContent = a;
+    }
+}
