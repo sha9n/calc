@@ -65,7 +65,7 @@ document.querySelector('.buttons').onclick = (event) => {
                 break;
             case "÷":
                 if (b === '0') {
-                    out.textContent = 'Ошибка';
+                    out.textContent = 'Разделить на ноль нельзя';
                     a = '';
                     b = '';
                     sign = '';
