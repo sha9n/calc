@@ -4,7 +4,7 @@ let sign = '';
 let finish  = false;
 
 const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
-const action = ['-', '+', 'X', '/'];
+const action = ['-', '+', 'X', '÷'];
 
 const out = document.querySelector('.screen p');
 
@@ -51,8 +51,32 @@ document.querySelector('.buttons').onclick = (event) => {
         return;
     }
 
-}
-        if (key === '='){
-
-            
+    if (key === '=') {
+        if (b ==='') b = a;
+        switch (sign) {
+            case "+":
+                a = (+a) + (+b);
+                break;
+            case "-":
+                a = a - b;
+                break;
+            case "X":
+                a = a * b;
+                break;
+            case "÷":
+                if (b === '0') {
+                    out.textContent = 'Ошибка';
+                    a = '';
+                    b = '';
+                    sign = '';
+                    return;
+                }
+                a = a / b;
+                break;
         }
+        finish = true;
+        out.textContent = a;
+        console.table(a, b , sign);
+    }
+
+}
