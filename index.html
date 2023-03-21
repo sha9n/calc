@@ -10,33 +10,33 @@
 <body>
     <script src="index.js" defer> </script>
     <div class="cal">
-        <div class="screen">
-            <p>0</p>
+        <div class="screen" maxlength="10">
+            <p class="out">0</p>
         </div>
         <div class="buttons">
-            <button class="knop ac pink">AC</button>
-            <button class="knop delete pink"><</button>
-            <button class="knop percent pink">%</button>
-            <button class="knop division pink">÷</button>
+            <button class="knop ac pink" data-action="AC">AC</button>
+            <button class="knop delete pink" data-action="<"><</button>
+            <button class="knop percent pink" data-action="%">%</button>
+            <button class="knop division pink" data-action="÷">÷</button>
 
-            <button class="knop one">1</button>
-            <button class="knop two">2</button>
-            <button class="knop three">3</button>
-            <button class="knop X pink">X</button>
+            <button class="knop one" data-action="1">1</button>
+            <button class="knop two" data-action="2">2</button>
+            <button class="knop three" data-action="3">3</button>
+            <button class="knop X pink" data-action="X">X</button>
 
-            <button class="knop four">4</button>
-            <button class="knop five">5</button>
-            <button class="knop six">6</button>
-            <button class="knop minus pink">-</button>
+            <button class="knop four" data-action="4">4</button>
+            <button class="knop five" data-action="5">5</button>
+            <button class="knop six" data-action="6">6</button>
+            <button class="knop minus pink" data-action="-">-</button>
 
-            <button class="knop seven">7</button>
-            <button class="knop eight">8</button>
-            <button class="knop nine">9</button>
-            <button class="knop plus pink">+</button>
+            <button class="knop seven" data-action="7">7</button>
+            <button class="knop eight" data-action="8">8</button>
+            <button class="knop nine" data-action="9">9</button>
+            <button class="knop plus pink" data-action="+">+</button>
             
-            <button class="knop zero">0</button>
-            <button class="knop dot">.</button>
-            <button class="knop equals pink">=</button>
+            <button class="knop zero" data-action="0">0</button>
+            <button class="knop dot" data-action=".">.</button>
+            <button class="knop equals pink" data-action="=">=</button>
         </div>
     </div>
 </body>
